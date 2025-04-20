@@ -113,20 +113,39 @@ service cloud.firestore {
 
 ---
 
-### 🔄 Project Structure
+## 📂 Project Structure
 
-```
-- auth/           // Login, Register, Role handling
-- sales/          // Cart, Checkout, History
-- inventory/      // Product add/edit/list
-- dashboard/      // Charts, KPIs
-- chat/           // In-app messaging
-- common/         // Reusable components, themes
+This app follows **Clean Architecture**, separating logic into presentation, domain, and data layers. It uses **Hilt** for dependency injection and **Jetpack Compose** for UI.
+
+```bash
+com/
+└── yourdomain/
+    └── posify/
+        ├── presentation/       # UI Layer (Jetpack Compose + ViewModels)
+        │   ├── auth/           # Login, Register, Auth screens
+        │   ├── inventory/      # Product list, Add/Edit Product
+        │   ├── sales/          # Cart, Checkout, Sales history
+        │   ├── dashboard/      # KPIs, charts, insights
+        │   ├── chat/           # In-app staff messaging
+        │   └── common/         # Theme, navigation, shared UI components
+        │
+        ├── domain/             # Business Logic Layer
+        │   ├── model/          # Core entities like Product, Sale, User
+        │   ├── usecase/        # Use cases (e.g. AddProductUseCase)
+        │   └── repository/     # Abstract repository interfaces
+        │
+        ├── data/               # Data Layer
+        │   ├── repository/     # Implementations of repositories
+        │   ├── local/          # Room database, DAOs, entities
+        │   ├── remote/         # Firestore API access
+        │   └── mapper/         # Data ↔ Domain model converters
+        │
+        ├── di/                 # Hilt Modules and setup
+        └── POSifyApp.kt        # Application class with @HiltAndroidApp
 ```
 
 ---
-
-## 📌 TODOs & Roadmap
+> 🧼 Follows **separation of concerns**, allows for easier testing, scaling, and modularization.
 
 ## 📌 TODOs & Roadmap
 
