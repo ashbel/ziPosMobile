@@ -3,8 +3,8 @@ package com.mopanesystems.zipos
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.mopanesystems.zipos.navigation.AppNavGraph
-import com.mopanesystems.zipos.ui.theme.ZiPosTheme
+import com.mopanesystems.zipos.presentation.common.navigation.MainScreen
+import com.mopanesystems.zipos.presentation.common.theme.ZiPosTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -47,6 +47,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -85,7 +89,7 @@ dependencies {
     kapt("androidx.room:room-compiler:2.7.0")
     implementation(libs.androidx.room.ktx)
     implementation(libs.firebase.firestore.ktx)
-
-
+    implementation (libs.kotlinx.coroutines.play.services)
+    implementation("io.coil-kt:coil-compose:2.5.0")
 }
 

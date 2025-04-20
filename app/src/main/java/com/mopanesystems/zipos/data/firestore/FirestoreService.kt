@@ -1,7 +1,7 @@
 package com.mopanesystems.zipos.data.firestore
 
 import com.google.firebase.firestore.FirebaseFirestore
-import com.mopanesystems.zipos.domain.Product
+import com.mopanesystems.zipos.domain.model.inventory.Product
 
 object FirestoreService {
     private val db = FirebaseFirestore.getInstance()
