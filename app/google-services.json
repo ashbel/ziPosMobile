@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593084364463",
+    "project_id": "ziposmobile",
+    "storage_bucket": "ziposmobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593084364463:android:816a8195f38bdf2170465a",
+        "android_client_info": {
+          "package_name": "com.mopanesystems.zipos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593084364463-opdvl22jh5q69e14lpjl9nilb19b1ph7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmMuMgPLvLQ2ggJeOM67z5mkQUN84V6T8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593084364463-opdvl22jh5q69e14lpjl9nilb19b1ph7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
